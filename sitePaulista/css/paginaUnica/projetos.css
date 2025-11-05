@@ -1,0 +1,28 @@
+.projetos-bg h1{font-size: 52px;
+text-align: center;}
+
+.projetos-container{display: flex;
+justify-content: center;
+align-items: center;}
+
+.projeto-item {
+    display: flex;
+    max-width: 700px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projeto-item img{border-radius: 10px;}
+
+.projeto-item a{display: flex;
+gap: 10px;
+align-items: center;
+margin-top: 10px;}
+
+.projeto-item a svg{fill: #000;
+    transition: 0.3s;
+}
+
+
+.projeto-item a:hover svg{fill: #fff;
+}

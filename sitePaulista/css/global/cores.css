@@ -1,0 +1,53 @@
+body {
+  --cor-1: #fff;
+  --cor-2: #000;
+  --cor-p1: rgba(111, 74, 185, 1);
+  --cor-p2: rgba(217, 217, 217, 1);
+}
+
+body.dark {
+  --cor-1: #000;
+  --cor-2: #fff;
+  --cor-p1: rgba(76, 66, 107, 1);
+  --cor-p2: #000;
+}
+
+body.dark .text-sobre h1,
+body.dark .text-sobre p,
+body.dark .contato-container > h1 {
+  color: #fff;
+}
+
+.contato-container > h1,
+.text-sobre h1 {
+  font-size: 52px;
+}
+
+.escuro {
+  fill: var(--cor-p1);
+  transition: 0.3s;
+}
+
+body.dark .escuro {
+  transform: rotate(180deg);
+}
+
+.cor-1 {
+  color: var(--cor-1);
+}
+.cor-2 {
+  color: var(--cor-2);
+}
+.cor-p1 {
+  color: var(--cor-p1);
+}
+.cor-p2 {
+  color: var(--cor-p2);
+}
+.cor-fundo {
+  color: var(--cor-fundo);
+}
+
+nav ul {
+  color: rgba(85, 81, 81, 1);
+}

@@ -1,0 +1,57 @@
+.sobre-content {
+  display: grid;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.text-sobre {
+  height: 50vh;
+  justify-self: center;
+}
+
+.sobre-content h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sobre-content p {
+  max-width: 40ch;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 800;
+  font-style: Extra Bold;
+  font-size: 22px;
+}
+
+.btns-sobre {
+  grid-column: 1/-1;
+  justify-self: start;
+}
+
+.btns-sobre a {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.btns-sobre a:nth-child(2) {
+  margin-top: 10px;
+}
+
+@media (max-width: 700px) {
+  .sobre-content{padding-top: 50px;}
+  .sobre-content h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+  }
+  .sobre-content p {
+    font-size: 18px;
+  }
+  .text-sobre {
+    height: initial;
+  }
+  .btns-sobre {
+    margin-top: 30px;
+    justify-self: center;
+  }
+}

@@ -1,0 +1,51 @@
+header {
+  background: var(--cor-p2);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.logo {
+  display: flex;
+  gap: 20px;
+}
+
+.header ul {
+  display: flex;
+  gap: 15px;
+  font-weight: 600;
+}
+
+.header ul li {
+  transition: 0.3s;
+}
+
+.escuro{cursor: pointer;}
+
+.ativo,
+.header ul li:hover {
+  color: var(--cor-2);
+}
+
+@media (max-width: 650px) {
+  .header {
+    justify-content: center;
+    gap: 20px;
+  }
+  .header ul {
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .header ul li {
+    padding: 5px;
+  }
+}
